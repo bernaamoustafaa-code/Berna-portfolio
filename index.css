@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Afacad+Flux:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Afacad Flux", sans-serif;
+  --font-serif: "Climate Crisis", sans-serif;
+}
+
+body {
+  @apply bg-[#D3D3D3] text-zinc-900 font-sans antialiased;
+}
+
+.text-metal {
+  @apply text-zinc-600;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-white/20;
+}
